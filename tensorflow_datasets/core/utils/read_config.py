@@ -77,10 +77,10 @@ class ReadConfig(_ReadConfig):
     try_autocache: If True (default) and the dataset satisfy the right
       conditions (dataset small enough, files not shuffled,...) the dataset
       will be cached during the first iteration (through `ds = ds.cache()`).
-    shuffle_seed: `tf.int64`, seeds forwarded to `tf.data.Dataset.shuffle` when
-      `shuffle_files=True`.
+    shuffle_seed: `tf.int64`, seed forwarded to `tf.data.Dataset.shuffle` when
+      shuffling files.
     shuffle_reshuffle_each_iteration: `bool`, forwarded to
-      `tf.data.Dataset.shuffle` when `shuffle_files=True`.
+      `tf.data.Dataset.shuffle` when shuffling files.
     interleave_cycle_length: `int`, forwarded to `tf.data.Dataset.interleave`.
       Default to 16.
     interleave_block_length: `int`, forwarded to `tf.data.Dataset.interleave`.
